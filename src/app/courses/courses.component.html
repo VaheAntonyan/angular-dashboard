@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-header">
+    <h2>Courses</h2>
+    <button type="button" class="card-action" (click)="selected = !selected">+</button>
+  </div>
+
+  <div class="card-body">
+    <ul class="card-list" [ngStyle]="{'flex-direction': selected ? 'column-reverse' : 'column'}">
+      <ng-container *ngIf="true">
+        <li *ngFor="let item of courses">
+          <h3>{{item.name}}</h3>
+          <span class="card-label">Teachers :</span>
+          <a href="">{{item.teacherOne}}</a>
+          <a href="">{{item.teacherTwo}}</a>
+        </li>
+      </ng-container>
+
+    </ul>
+  </div>
+</div>

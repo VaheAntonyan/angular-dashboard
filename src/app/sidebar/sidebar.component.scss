@@ -1,0 +1,36 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  padding: 40px 25px;
+
+  .sidebar__logo {
+    margin-bottom: 75px;
+    display: block;
+  }
+
+  a {
+    display: block;
+    margin-bottom: 40px;
+    &.active {
+      .sidebar__icon {
+        fill: #03a9f4;
+      }
+    }
+    &:hover {
+      .sidebar__icon {
+        fill: #03a9f4;
+      }
+    }
+  }
+}
+
+.sidebar__icon {
+  width: 24px;
+  height: 24px;
+  fill: #727272;
+}

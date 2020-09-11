@@ -1,0 +1,71 @@
+
+.card-table {
+  height: 300px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: white;
+}
+
+.card-table__header {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 0 15px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+}
+
+.card-table__body {
+  height: calc(100% - 60px);
+  overflow: auto;
+}
+
+.card-table__header h2 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 20px 0 0;
+  /*float: left;*/
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  padding: 0 16px;
+}
+
+.table th {
+  text-align: left;
+  font-weight: 500;
+  background-color: #ebebeb;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  white-space: nowrap;
+}
+
+// .table th:not(:last-child) {
+//   border-right: 1px solid #cecece;
+// }
+
+.table tr:first-child th:not(:last-child), .table tr:not(:first-child) th {
+  border-right: 1px solid #cecece;
+}
+
+.table td:first-child {
+  min-width: 200px;
+}
+
+.table tr {
+  height: 48px;
+}
+
+.table input {
+  width: 50px;
+  height: 24px;
+  border: 1px solid #ddd;
+  outline: none;
+}

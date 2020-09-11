@@ -1,0 +1,10 @@
+<header class="dashboard-header"></header>
+
+<app-sidebar></app-sidebar>
+
+<div class="dashboard-container">
+  <app-participants class="dashboard-container__item" [ngClass]="{'animation fade-in': init}"></app-participants>
+  <app-courses class="dashboard-container__item" ></app-courses>
+  <app-tasks class="dashboard-container__item" [ngClass]="{'animation fade-in-left': init}"></app-tasks>
+  <app-table class="dashboard-container__item"></app-table>
+</div>

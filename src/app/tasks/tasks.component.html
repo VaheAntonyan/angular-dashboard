@@ -1,0 +1,83 @@
+<div class="card-tasks">
+  <div class="card-tasks__header">
+    <h2 class="card-tasks__nav-item--active">Tasks</h2>
+
+    <nav class="card-tasks__nav">
+      <a class="card-tasks__nav-item card-tasks__nav-item--active" href="#">Today</a>
+      <a class="card-tasks__nav-item" href="#">Week</a>
+      <a class="card-tasks__nav-item" href="#">Month</a>
+    </nav>
+
+    <button type="button" class="card-tasks__action" (click)="togglePopup = !togglePopup">add new tasks</button>
+  </div>
+
+  <div class="card-tasks__body">
+    <ul class="card-tasks__list">
+      <li>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </label>
+      </li>
+      <li>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </label>
+      </li>
+      <li>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </label>
+      </li>
+      <li>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </label>
+      </li>
+      <li>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </label>
+      </li>
+      <li>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </label>
+      </li>
+    </ul>
+  </div>
+
+
+</div>
+
+<div id="popup" class="popup-container" *ngIf="togglePopup">
+  <div class="popup-backdrop" (click)="togglePopup = !togglePopup"></div>
+
+  <div class="popup-wrapper">
+
+    <div class="popup">
+      <div class="popup__header">
+        <h2>Add New Tasks</h2>
+        <button class="popup__action" [style.] (click)="togglePopup = !togglePopup">
+         x
+        </button>
+      </div>
+      <div class="form">
+        <label for="description">Description</label>
+        <textarea id="description" class="form__field" placeholder="Input description.."></textarea>
+        <button class="form__action">Add Description</button>
+      </div>
+    </div>
+  </div>
+</div>

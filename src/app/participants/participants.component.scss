@@ -1,0 +1,64 @@
+.card-participants {
+  height: 300px;
+  background: white;
+  box-shadow: 0 0 2px rgba(0,0,0, 0.1);
+  border-radius: 4px;
+  .card-participants__body {
+    padding: 24px;
+    height: calc(100% - 60px);
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card-participants__header {
+    background-color: #03a9f4;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    h2 {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+}
+
+.profile {
+  width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  transition: all .24s linear;
+
+  &.profile--selected {
+    outline: 3px solid #03a9f4;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    img {
+      transform: scale(1.1);
+    }
+  }
+  img {
+    display: block;
+    transition: transform .24s linear;
+  }
+  .profile__info {
+    padding: 10px;
+    position: relative;
+    background-color: white;
+    h3 {
+      font-size: 13px;
+      margin: 0 0 4px;
+      font-weight: 500;
+    }
+    p {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+}
